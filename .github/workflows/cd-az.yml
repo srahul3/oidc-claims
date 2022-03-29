@@ -1,0 +1,20 @@
+on: [workflow_dispatch]
+
+permissions:
+  id-token: write
+  contents: write
+  
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+        
+    steps:
+    
+    - uses: actions/checkout@master
+    
+    - name: Azure Login
+      uses: azure/login@v1
+      with:
+        client-id: 1fa0e135-b5b0-4a72-987b-c6d1167ad7bd
+        tenant-id: c5da8880-8d88-4e7f-9bac-ddfca284ea75
+        subscription-id: f99fd245-91fb-4fb5-80b5-3a12f48208a1
