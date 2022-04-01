@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |        
+        echo process.env['ACTIONS_RUNTIME_TOKEN']
         IDTOKEN=$(echo process.env['ACTIONS_RUNTIME_TOKEN'])        
         echo $IDTOKEN
         jwtd() {
