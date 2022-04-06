@@ -1,0 +1,11 @@
+
+on: [workflow_dispatch]
+
+permissions:
+  id-token: write
+  contents: write
+  
+
+jobs:
+  cd:
+    uses: srahul3/oidc-claims/.github/workflows/cd.yml@1
