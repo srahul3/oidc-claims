@@ -8,4 +8,4 @@ permissions:
 
 jobs:
   cd:
-    uses: srahul3/oidc-claims/.github/workflows/cd.yml@1
+    uses: srahul3/oidc-claims/.github/workflows/cd.yml@main
