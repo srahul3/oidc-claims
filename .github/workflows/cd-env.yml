@@ -7,6 +7,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: qa
     steps:
     - run: |
         curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=github"
