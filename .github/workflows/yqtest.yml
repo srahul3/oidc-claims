@@ -9,4 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - run: |
-        echo '$(yq -V)'
+        yq -V
+        echo "done"
