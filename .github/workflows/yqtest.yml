@@ -1,0 +1,12 @@
+on: [workflow_dispatch]
+
+permissions:
+  id-token: write
+  contents: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: |
+        echo '$(yq -V)'
